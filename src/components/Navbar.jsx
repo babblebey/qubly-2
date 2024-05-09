@@ -12,7 +12,7 @@ const Navbar = () => {
     return ( 
         <div className="w-full max-w-[1400px] mx-auto">
             <div className={`flex justify-between items-center p-4 md:px-10 ${toggleMenu && 'bg-white shadow-sm'}`}>
-                <img src={logo.src} alt="Qubly" className="w-[38px] md:w-[48px]"/>
+                <img width={70} height={70} loading="eager" src={logo.src} alt="Qubly" className="w-[38px] md:w-[48px]"/>
                 
                 <div className="hidden md:block">
                     <ul className="flex flex-col sm:flex-row items-center">
