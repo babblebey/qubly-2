@@ -1,0 +1,30 @@
+---
+import { Footer, ForEngineeringTeams, ForProductTeams, Hero, Navbar, SignupForm, Testimonials, WhyQubly } from "../components";
+import "../global.css"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Qubly - Landing Page</title>
+	</head>
+	<body>
+		<div class="font-body">
+      <div class="bg-gradient-to-b from-white to-[#E2F1FF] -skew-y-6">
+        <div class="skew-y-6">
+          <Navbar client:load />
+          <Hero />
+        </div>
+      </div>
+      <WhyQubly />
+      <ForProductTeams />
+      <ForEngineeringTeams />
+      <Testimonials />
+      <SignupForm />
+      <Footer />
+    </div>
+	</body>
+</html>
