@@ -1,0 +1,59 @@
+---
+import Image from "astro/components/Image.astro"
+import Input from "./Input.astro"
+---
+
+<div class="w-full max-w-[1400px] mx-auto px-2 md:px-10 flex flex-col lg:flex-row justify-center items-center">
+    <div class="w-full lg:w-6/12 text-center mb-14 lg:mb-0">
+        <h2 class="font-bold text-2xl md:text-[36px] text-primary-200 leading-tight mb-5 md:mb-10">
+            See why the world's best <br class="hidden md:block"/>
+            companies use Qubly to <br class="hidden md:block"/> 
+            become truly data-driven.
+        </h2>
+        <div class="flex w-10/12 m-auto items-center justify-evenly">
+            <div class="h-[1px] w-3/12 md:w-4/12 bg-primary-100" />
+            <p class="w-6/12 md:w-fit font-medium text-primary-100">
+                Trusted by
+            </p>
+            <div class="h-[1px] w-3/12 md:w-4/12 bg-primary-100" />
+        </div>
+        <div class="w-full md:w-10/12 m-auto flex flex-wrap justify-evenly items-center">
+            <Image width={70} height={70} src="/img/accenture.svg" alt="Accenture" class="max-h-6 md:max-h-10 basis-1/2 my-2 md:my-6" />
+            <Image width={70} height={70} src="/img/react.svg" alt="React" class="max-h-12 md:max-h-20 basis-1/2 my-2 md:my-6" />
+            <Image width={70} height={70} src="/img/airbnb.svg" alt="AirBnB" class="max-h-6 md:max-h-10 basis-1/2 my-2 md:my-6" />
+            <Image width={70} height={70} src="/img/sky.svg" alt="Sky" class="max-h-6 md:max-h-10 basis-1/2 my-2 md:my-6" />
+        </div>
+    </div>
+
+    <div class="w-full lg:w-6/12 p-1 md:p-2">
+        <div class="h-full w-full bg-secondary-100 rounded-md">
+            <div class="bg-white w-11/12 md:w-10/12 m-auto px-4 md:px-10 pb-8 relative -top-10 border border-secondary-100 shadow-lg rounded-md">
+                <h2 class="text-primary-200 font-bold text-xl md:text-[28px] text-center my-4 md:my-8">
+                    Sign Up
+                </h2>
+
+                <Input type={"email"} name={"email"} placeholder={"Your primary email"}  />
+                <Input type={"password"} name={"password"} placeholder={"Enter password"}  />
+                <Input type={"password"} name={"retypePassword"} placeholder={"Re-type password"}  />
+                <button class="w-full p-3 bg-secondary-200 rounded shadow-sm hover:shadow-xl transition ease-out duration-300">
+                    <p class="text-white">
+                        Start your free trial
+                    </p>
+                </button>
+
+                <p class="text-center my-3 md:my-5 font-medium text-primary-200">OR</p>
+
+                <div class="cursor-pointer w-full md:w-[50%] m-auto">
+                    <Image width={70} height={70} src="/img/google-btn.svg" alt="Sign Up" class="w-full" /> 
+                </div>
+
+                <div class="h-[1px] w-full bg-[#8989A2] my-6" />
+
+                <p class="text-center text-primary-100 text-sm md:text-base">
+                    Already have an account? 
+                    <a href="#" class="underline text-blue-700 ml-2">Login</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

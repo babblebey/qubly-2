@@ -1,0 +1,105 @@
+---
+import Image from 'astro/components/Image.astro';
+---
+<div class="w-full max-w-[1400px] mx-auto my-10 md:my-24 px-4 md:px-10 pt-10 pb-5">
+    <div class="flex flex-col-reverse md:flex-row justify-start items-start">
+        <div class="w-full md:w-3/12 pr-5">
+            <Image src="/img/logo.svg" width={70} height={70} alt="Qubly" class="mb-2 mx-auto md:mx-0 w-[70px]" />
+            <p class="text-sm text-primary-200 font-medium text-center md:text-left">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat ut wisi enim ad minim
+            </p>
+
+            {/* Social Icons */}
+            <div class="flex mt-3 justify-center md:justify-start items-center">
+                <Image src="/icon/facebook.svg" width={24} height={24} alt="Facebook" class="w-6 mx-4 md:mx-0 md:mr-4 cursor-pointer" />
+                <Image src="/icon/twitter.svg" width={24} height={24} alt="Twitter" class="w-6 mx-4 md:mx-0 md:mr-4 cursor-pointer" />
+                <Image src="/icon/instagram.svg" width={24} height={24} alt="Instagram" class="w-6 mx-4 md:mx-0 md:mr-4 cursor-pointer" />
+            </div>
+        </div>
+        <div class="hidden md:block w-2/12">
+            <h2 class="foot-title">
+                Product
+            </h2>
+            <ul class="text-sm font-medium">
+                {['Connections', 'Protocols', 'Personas', 'Integrations', 'Catalog', 'Pricing', 'Security', 'GDPR'].map((item, index) => (
+                    <li class="my-2 cursor-pointer">
+                        { item }
+                    </li>
+                ))}
+            </ul>
+        </div>
+        <div class="hidden md:block w-2/12">
+            <h2 class="foot-title">
+                For Developers
+            </h2>
+            <ul class="text-sm font-medium">
+                {['Docs', 'API', 'Open Source', 'Engineering Team'].map((item, index) => (
+                    <li class="my-2 cursor-pointer">
+                        { item }
+                    </li>
+                ))}
+            </ul>
+        </div>
+        <div class=" hidden md:block w-2/12">
+            <h2 class="foot-title">
+                Company
+            </h2>
+            <ul class="text-sm font-medium">
+                {['Careers', 'Blog', 'Press'].map((item, index) => (
+                    <li class="my-2 cursor-pointer">
+                        { item }
+                    </li>
+                ))}
+            </ul>
+        </div>
+        <div class="hidden md:block w-2/12">
+            <h2 class="foot-title">
+                Support
+            </h2>
+            <ul class="text-sm font-medium">
+                {['Help Center', 'Contact Us', 'Security Bulletins', 'Documentation', 'Partner Portal'].map((item, index) => (
+                    <li class="my-2 cursor-pointer">
+                        { item }
+                    </li>
+                ))}
+            </ul>
+        </div>
+        <div class="w-full md:w-3/12">
+            <h2 class="foot-title">
+                Newsletter
+            </h2>
+            <div class="relative mb-10">
+                <input 
+                    type="email" 
+                    class="rounded p-3 outline-none shadow-lg border border-secondary-100 w-full"
+                    placeholder="Email"
+                />
+                <svg class="absolute top-0 right-0 m-3 rounded-full" xmlns="http://www.w3.org/2000/svg" width="28.01" height="28.01" viewBox="0 0 28.01 28.01">
+                    <path id="Icon_ionic-ios-send" data-name="Icon ionic-ios-send" d="M23.686,4.547,4.748,12.8a.434.434,0,0,0,.015.789l5.123,2.894a.826.826,0,0,0,.944-.093l10.1-8.708c.067-.057.227-.165.289-.1s-.036.222-.093.289l-8.739,9.843a.823.823,0,0,0-.083.985l3.348,5.37a.436.436,0,0,0,.784-.01L24.268,5.12A.434.434,0,0,0,23.686,4.547Z" transform="translate(14.005 -6.368) rotate(45)" fill="#722ed1"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap md:flex-nowrap justify-center md:justify-between">
+        <p class="basis-1/1 text-sm mt-5 italic font-medium text-center">
+            Coded with  
+            <span class="animate-pulse mx-1 text-red-600">
+                ❤
+            </span> 
+            using React & TailwindCSS by  
+            <a href="https://instagram.com/babblebey" class="text-secondary-200 underline mx-1" target="_blank">
+                @babblebey
+            </a>
+            from a UI Design by
+            <a href="https://dribbble.com/shots/10847367-Qubly-XD-Freebie" class="text-secondary-200 underline mx-1" target="_blank">
+                Rahul Rao
+            </a>
+        </p>
+        <p class="basis-1/1 text-sm mt-5 italic text-center">
+            <a href="https://github.com/babblebey/qubly" class="text-secondary-200 underline mx-1" target="_blank">
+                View Source on GitHub
+            </a>
+        </p>
+    </div>
+</div>

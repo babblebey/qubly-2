@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from '../img/logo.svg';
+import logo from '../../public/img/logo.svg';
 
 const Navbar = () => {
 
@@ -31,8 +31,8 @@ const Navbar = () => {
 
                 <div className="md:hidden cursor-pointer" onClick={handleToggle}>
                     { !toggleMenu ? (
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M4 8h16M4 16h16" />
                         </svg>
                     ) : (
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

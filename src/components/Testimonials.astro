@@ -1,0 +1,29 @@
+---
+import Image from "astro/components/Image.astro"
+---
+<div class="bg-gradient-to-b from-[#F9F0FF] to-[#E2F1FF] -skew-y-6 mb-12 md:mb-28">
+    <div class="w-full max-w-[1400px] mx-auto py-14 md:py-28 skew-y-6">
+        <div class="w-full md:w-6/12 m-auto px-4 text-center">
+            <p class="font-medium text-primary-200 text-lg">
+                "What I love about Qubly is the easy way we can collaborate even if there is a lot of people involved in the process"
+            </p>
+            <Image width={70} height={70} src="/img/guilermo.svg" alt="Guilermo" class="mx-auto mt-6 mb-2"/>
+            <p class="text-primary-200 font-bold">
+                Guilemmor Cabane <br />
+                CTO @ BigSpring
+            </p>
+        </div>
+
+        <div class="w-full md:w-10/12 mx-auto mt-16 px-4">
+            <div class="h-[1px] w-full bg-[#DEC9FA]" />
+
+            <div class="flex flex-wrap lg:flex-nowrap justify-evenly md:justify-between items-center py-10 px-4">
+                <Image width={70} height={70} src="/img/tonkean.svg" alt="Tonkean" class="basis-1/3 h-[25px] md:h-full mb-4 w-auto md:basis-1" />
+                <Image width={70} height={70} src="/img/bigspring.svg" alt="BigSpring" class="basis-1/3 h-[25px] md:h-full mb-4 w-auto md:basis-1" />
+                <Image width={70} height={70} src="/img/clearbit.svg" alt="Clearbit" class="basis-1/3 h-[25px] md:h-full mb-4 w-auto md:basis-1" />
+                <Image width={70} height={70} src="/img/mine.svg" alt="Mine" class="basis-1/3 h-[25px] md:h-full mb-4 w-auto md:basis-1" />
+                <Image width={70} height={70} src="/img/shake.svg" alt="Shake" class="basis-1/3 h-[25px] md:h-full mb-4 w-auto md:basis-1" />
+            </div>
+        </div>
+    </div>
+</div>
